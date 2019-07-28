@@ -3,7 +3,7 @@ import QtQuick.Controls 1.1
 import QtQuick.Layouts 1.1
 
 import ".."
-import "../../code/litecoin.js" as Litecoin
+import "../../code/monero.js" as Monero
 
 Item {
 	id: configGeneral
@@ -16,8 +16,8 @@ Item {
 	property alias cfg_showText: showText.checked
 	property alias cfg_showDecimals: showDecimals.checked
 	property alias cfg_showBackground: showBackground.checked
-	property variant sourceList: { Litecoin.getAllSources() }
-	property variant currencyList: { Litecoin.getAllCurrencies() }
+	property variant sourceList: { Monero.getAllSources() }
+	property variant currencyList: { Monero.getAllCurrencies() }
 
 	GridLayout {
 		columns: 2
