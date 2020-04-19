@@ -7,7 +7,7 @@
   <group name="General">
     <entry name="source" type="String">
       <label>Source</label>
-      <default>CoinMarketCap</default>
+      <default>BW</default>
     </entry>
 	<entry name="currency" type="String">
       <label>Currency</label>
