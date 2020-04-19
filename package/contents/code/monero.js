@@ -27,7 +27,7 @@ var currencySymbols = {
 };
 
 function getRate(source, currency, callback) {
-	var source = typeof source === 'undefined' ? getSourceByName('CoinMarketCap') : getSourceByName(source);
+	var source = typeof source === 'undefined' ? getSourceByName('BW') : getSourceByName(source);
 	
 	if(source === null) return false;
 	
