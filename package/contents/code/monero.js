@@ -1,4 +1,13 @@
 var sources = [
+        {
+		name: 'Cryptonator',
+		url: 'https://api.cryptonator.com/api/ticker/xmr-usd',
+		homepage: 'https://cryptonator.com/',
+		currency: 'USD',
+		getRate: function(data) {
+			return data.ticker.price;
+		}
+	},
 	{
 		name: 'BW',
 		url: 'https://www.bw.com/exchange/config/controller/website/pricecontroller/getassistprice',
@@ -6,6 +15,15 @@ var sources = [
 		currency: 'USD',
 		getRate: function(data) {
 			return data.datas.usd.xmr;
+		}
+	},
+        {
+		name: 'Bitfinex',
+		url: 'https://api.bitfinex.com/v1/pubticker/xmrusd',
+		homepage: 'https://www.bitfinex.com/',
+		currency: 'USD',
+		getRate: function(data) {
+			return data.ask;
 		}
 	},
 ];
@@ -27,7 +45,7 @@ var currencySymbols = {
 };
 
 function getRate(source, currency, callback) {
-	var source = typeof source === 'undefined' ? getSourceByName('BW') : getSourceByName(source);
+	var source = typeof source === 'undefined' ? getSourceByName('Cryptonator') : getSourceByName(source);
 	
 	if(source === null) return false;
 	
