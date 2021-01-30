@@ -19,6 +19,7 @@ make run
 ## Supported sources
 - Cryptonator
 - BW
+- Bitfinex
 
 ## Supported currencies
 - USD ($) - US Dollar
