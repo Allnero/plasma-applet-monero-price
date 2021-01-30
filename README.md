@@ -8,7 +8,7 @@ Plasma applet showing the current price of Monero from various markets to choose
 make install
 ```
 
-# Run
+## Run
 
 Run Plasma widgets in their own window. On Ubuntu you need to install `plasma-sdk`
 
