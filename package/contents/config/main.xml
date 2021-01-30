@@ -9,7 +9,7 @@
       <label>Source</label>
       <default>Cryptonator</default>
     </entry>
-      <entry name="currency" type="String">
+    <entry name="currency" type="String">
       <label>Currency</label>
       <default>USD</default>
     </entry>
